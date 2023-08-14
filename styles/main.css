@@ -43,6 +43,7 @@ h1 { font-size: 1rem; }
     & > * {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: var(--element-gap);
     }
 
@@ -186,8 +187,12 @@ h1 { font-size: 1rem; }
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1250px) {
     .result-container {
         width: 1000px;
+
+        & > .result_wrapper, & > .summary {
+            padding-block: 80px;
+        }
     }
 }
